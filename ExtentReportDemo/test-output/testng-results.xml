@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="3" total="7" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2324" started-at="2018-02-18T21:40:43Z" finished-at="2018-02-18T21:40:45Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2324" started-at="2018-02-18T21:40:43Z" finished-at="2018-02-18T21:40:45Z">
+      <class name="Tests.TC1">
+        <test-method status="PASS" signature="initDriver()[pri:0, instance:Tests.TC1@5c3bd550]" name="initDriver" is-config="true" duration-ms="6514" started-at="2018-02-19T03:10:36Z" finished-at="2018-02-19T03:10:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initTestClass()[pri:0, instance:Tests.TC1@5c3bd550]" name="initTestClass" is-config="true" duration-ms="960" started-at="2018-02-19T03:10:43Z" finished-at="2018-02-19T03:10:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestClass -->
+        <test-method status="PASS" signature="method2()[pri:0, instance:Tests.TC1@5c3bd550]" name="method2" duration-ms="9" started-at="2018-02-19T03:10:44Z" finished-at="2018-02-19T03:10:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+        <test-method status="PASS" signature="finishTestClass(org.testng.ITestResult)[pri:0, instance:Tests.TC1@5c3bd550]" name="finishTestClass" is-config="true" duration-ms="559" started-at="2018-02-19T03:10:44Z" finished-at="2018-02-19T03:10:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=method2 status=SUCCESS method=TC1.method2()[pri:0, instance:Tests.TC1@5c3bd550] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTestClass -->
+      </class> <!-- Tests.TC1 -->
+      <class name="Tests.TC2">
+        <test-method status="PASS" signature="initTestClass()[pri:0, instance:Tests.TC2@91161c7]" name="initTestClass" is-config="true" duration-ms="165" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestClass -->
+        <test-method status="PASS" signature="method2()[pri:0, instance:Tests.TC2@91161c7]" name="method2" duration-ms="4" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+        <test-method status="PASS" signature="finishTestClass(org.testng.ITestResult)[pri:0, instance:Tests.TC2@91161c7]" name="finishTestClass" is-config="true" duration-ms="149" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=method2 status=SUCCESS method=TC2.method2()[pri:0, instance:Tests.TC2@91161c7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTestClass -->
+      </class> <!-- Tests.TC2 -->
+      <class name="Tests.TC3">
+        <test-method status="PASS" signature="initTestClass()[pri:0, instance:Tests.TC3@604ed9f0]" name="initTestClass" is-config="true" duration-ms="133" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestClass -->
+        <test-method status="FAIL" signature="method3()[pri:0, instance:Tests.TC3@604ed9f0]" name="method3" duration-ms="6" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Tests.TC3.method3(TC3.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method3 -->
+        <test-method status="PASS" signature="finishTestClass(org.testng.ITestResult)[pri:0, instance:Tests.TC3@604ed9f0]" name="finishTestClass" is-config="true" duration-ms="98" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=method3 status=FAILURE method=TC3.method3()[pri:0, instance:Tests.TC3@604ed9f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTestClass -->
+      </class> <!-- Tests.TC3 -->
+      <class name="Tests.TC4">
+        <test-method status="PASS" signature="initTestClass()[pri:0, instance:Tests.TC4@6a4f787b]" name="initTestClass" is-config="true" duration-ms="121" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestClass -->
+        <test-method status="PASS" signature="method4()[pri:0, instance:Tests.TC4@6a4f787b]" name="method4" duration-ms="2" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method4 -->
+        <test-method status="PASS" signature="finishTestClass(org.testng.ITestResult)[pri:0, instance:Tests.TC4@6a4f787b]" name="finishTestClass" is-config="true" duration-ms="86" started-at="2018-02-19T03:10:45Z" finished-at="2018-02-19T03:10:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=method4 status=SUCCESS method=TC4.method4()[pri:0, instance:Tests.TC4@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTestClass -->
+      </class> <!-- Tests.TC4 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
